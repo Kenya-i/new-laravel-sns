@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', '記事一覧')
+@section('title', '記事')
 
 @section('content')
 <div class="container">
@@ -9,7 +9,7 @@
       <i class="fas fa-user-circle fa-3x mr-1"></i>
       <div>
         <div class="font-weight-bold">
-          ユーザー名
+          
         </div>
         <div class="font-weight-lighter">
           
