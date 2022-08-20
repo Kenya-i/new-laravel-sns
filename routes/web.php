@@ -17,5 +17,6 @@
 
 use App\Http\Controllers\ArticleController;
 
+Auth::routes();
 Route::get('/', [ArticleController::class, 'index']);
 
