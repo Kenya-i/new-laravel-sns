@@ -20,4 +20,5 @@ use App\Http\Controllers\ArticleController;
 
 Auth::routes();
 Route::get('/', [ArticleController::class, 'index'])->name('articles.index');
-Route::resource('/articles', 'ArticleController')->except(['index'])->middleware('auth');
+Route::resource('/articles', 'ArticleController')->except(['index', 'show'])->middleware('auth');
+Route::resource('/articles', 'ArticleController')->only(['show']);
